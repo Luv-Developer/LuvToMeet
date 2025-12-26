@@ -12,7 +12,7 @@ let myMeeting = async(element) => {
         serverSecret,
         roomcode,
         Date.now().toString(),
-        "Luv"
+        "Guest"
     )
     const zp = ZegoUIKitPrebuilt.create(kitToken)
     zp.joinRoom({
@@ -32,4 +32,5 @@ let myMeeting = async(element) => {
         </>
     )
 }
+
 export default Meeting
