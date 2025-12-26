@@ -137,7 +137,7 @@ const Roompage = () => {
   };
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(`https://luv-to-meet.vercel.app/room/${roomCode}`);
+    navigator.clipboard.writeText(roomCode);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -541,3 +541,4 @@ const Roompage = () => {
 }
 
 export default Roompage
+
